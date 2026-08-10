@@ -386,12 +386,20 @@ h3 {
 }
 
 .footer-links a {
-    color: inherit;
-    text-decoration: none;
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    color: var(--text-muted);
+
+    transition: color 150ms ease;
 }
 
-.footer-links a:hover {
-    color: var(--text);
+.footer-links svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
 
 
