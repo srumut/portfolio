@@ -353,6 +353,14 @@ h3 {
     text-decoration: underline;
 }
 
+.external-link-icon {
+    width: 0.9em;
+    height: 0.9em;
+
+    fill: currentColor;
+
+    vertical-align: -0.1em;
+}
 
 /*
  * Footer
