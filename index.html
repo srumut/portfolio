@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="Umut Özkan — Computer Engineering student and software developer."
+    >
+
+    <title>Umut Özkan</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="site-title" href="#about">Umut Özkan</a>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="nav-menu"
+                aria-label="Toggle navigation"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle color theme"
+                >
+                    Theme
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About -->
+        <section class="section about" id="about">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img
+                        src="images/profile.jpg"
+                        alt="Portrait of Umut Özkan"
+                        width="400"
+                        height="400"
+                    >
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow">Computer Engineer</p>
+
+                    <h1>Hi, I'm Umut.</h1>
+
+                    <p class="lead">
+                        I'm a computer engineer interested in
+                        software development, web programming, graphics programming, systems
+                        programming, and building things from the ground up.
+                    </p>
+
+                    <p>
+                        I'm from Muğla, Turkey and I am 24 years old. My interest in software development 
+                        started in 2017 when I began learning to make simple plugins for Minecraft
+                        servers using <a href="https://github.com/SkriptLang/Skript#skript">Skript</a>.
+                        Later, I came across <a href="https://youtu.be/nXLlcoOEzhQ">this video</a>, which
+                        sparked my interest in programming. From there, I gradually learned HTML, CSS,
+                        JavaScript and Python.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <section>
+                    <h2>Education</h2>
+
+                    <article class="education-item">
+                        <div>
+                            <h3>B.Sc. Computer Engineering - English</h3>
+                            <p>Muğla Sıtkı Koçman University</p>
+                        </div>
+
+                        <time datetime="2021">2021 – 2025</time>
+                    </article>
+
+                    <article class="education-item">
+                        <div>
+                            <h3>High School</h3>
+                            <p>Milas Cumhuriyet Anadolu</p>
+                        </div>
+
+                        <time datetime="2016">2016 – 2020</time>
+                    </article>
+                </section>
+
+                <section>
+                    <h2>Interests</h2>
+
+                    <ul class="tag-list">
+                        <li>Web Development</li>
+                        <li>Backend Programming</li>
+                        <li>Graphics Programming</li>
+                        <li>Game Development</li>
+                        <li>Low Level Programming</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section class="section projects" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Things I've built</p>
+                <h2>Projects</h2>
+                <p>
+                    A selection of personal, university and internship projects.
+                </p>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-card-content">
+                        <h3>Basic NLP Exercises</h3>
+
+                        <p>
+                            A collection of Jupyter notebooks demonstrating basic NLP tasks that
+                            I implemented using the knowledge I gained from my NLP course.
+                        </p>
+
+                        <ul class="tag-list">
+                            <li>Python</li>
+                            <li>Jupyter</li>
+                            <li>Google Colab</li>
+                            <li>Bag of Words</li>
+                            <li>TF-IDF</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/srumut/NLP"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-card-content">
+                        <h3>Image Steganography</h3>
+
+                        <p>
+                            A Python application that hides data inside images, with optional encryption
+                            for the embedded data. Developed as a final project for my Computer and Network
+                            Security course.
+                        </p>
+
+                        <ul class="tag-list">
+                            <li>Python</li>
+                            <li>Pillow</li>
+                            <li>RSA</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/srumut/image-steganography"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-card-content">
+                        <h3>Flight Management API</h3>
+
+                        <p>
+                            A REST API for managing users and products, developed during my first
+                            internship. The project includes JWT authentication, database management
+                            with Prisma, and API documentation with Swagger.
+                        </p>
+
+                        <ul class="tag-list">
+                            <li>Typescript</li>
+                            <li>NestJS</li>
+                            <li>Node.js</li>
+                            <li>Prisma ORM</li>
+                            <li>RESTful API</li>
+                            <li>SQLite</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/srumut/internship_mava"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-card-content">
+                        <h3>Web Frontend</h3>
+
+                        <p>
+                            A web frontend that I developed on my second internship for the API
+                            I built during my first internship. The project provides a user interface 
+                            for interacting with the API and managing its data through a web application.
+                        </p>
+
+                        <ul class="tag-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Vue.js</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/srumut/internship_vihobook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-card-content">
+                        <h3>Super Simple ToDo API</h3>
+
+                        <p>
+                            A personal project I built while learning the fundamentals of backend
+                            development, including client-server communication, HTTP requests and
+                            responses, RESTful APIs, JWT authentication, cookies, Docker, and
+                            database integration through an API.
+                        </p>
+
+                        <ul class="tag-list">
+                            <li>Go</li>
+                            <li>PostgreSQL</li>
+                            <li>JWT</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/srumut/todoapi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <p>
+            ©<span id="year"></span> Umut Özkan
+        </p>
+
+        <div class="footer-links">
+            <a href="https://github.com/srumut">GitHub</a>
+            <a href="https://linkedin.com/in/srumut">LinkedIn</a>
+            <a href="mailto:zknumut21@gmail.com">Email</a>
+        </div>
+    </footer>
+</body>
+</html>
